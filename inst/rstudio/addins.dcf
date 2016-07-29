@@ -5,5 +5,5 @@ Interactive: false
 
 Name: makeStringsGadget
 Description: Opens a miniUI window where you can type strings
-Binding: insertInAddin
+Binding: makeStringsGadget
 Interactive: true
