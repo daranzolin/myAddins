@@ -1,0 +1,11 @@
+Package: myAddins
+Title: A collection of RStudio Addins for my Idiosyncratic Coding
+Version: 0.0.0.9000
+Authors@R: person("David", "Ranzolin", email = "daranzolin@gmail.com", role = c("aut", "cre"))
+Description: This collection of RStudio Addins eases my coding experience by
+    hastening some annoying tasks.
+Depends:
+    R (>= 3.2.2)
+License: MIT + file LICENSE
+LazyData: true
+RoxygenNote: 5.0.1

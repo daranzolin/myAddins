@@ -1,0 +1,9 @@
+Name: Insert %>% View()
+Description: Inserts `%>% View()` at the cursor position.
+Binding: insertViewAddin
+Interactive: false
+
+Name: makeStringsGadget
+Description: Opens a miniUI window where you can type strings
+Binding: insertInAddin
+Interactive: true
