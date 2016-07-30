@@ -8,7 +8,7 @@ makeStringsGadget <- function(...) {
     )
   )
 
-  shiny::server <- function(input, output, session) {
+  server <- function(input, output, session) {
 
     shiny::observeEvent(input$done, {
       returnValue <- unlist(strsplit(as.character(input$text), split = input$sep))
@@ -16,5 +16,5 @@ makeStringsGadget <- function(...) {
     })
   }
 
-  runGadget(ui, server)
+  shiny::runGadget(ui, server)
 }
