@@ -1,21 +1,18 @@
-library(shiny)
-library(miniUI)
-
 makeStringsGadget <- function(...) {
 
-  ui <- miniPage(
-    gadgetTitleBar("Type your strings freely!"),
-    miniContentPanel(
-      textInput("sep", "Separator:"),
-      textInput("text", "Strings:")
+  ui <- miniUI::miniPage(
+    miniUI::gadgetTitleBar("Type your strings freely!"),
+    miniUI::miniContentPanel(
+      shiny::textInput("sep", "Separator:"),
+      shiny::textInput("text", "Strings:")
     )
   )
 
-  server <- function(input, output, session) {
+  shiny::server <- function(input, output, session) {
 
-    observeEvent(input$done, {
+    shiny::observeEvent(input$done, {
       returnValue <- unlist(strsplit(as.character(input$text), split = input$sep))
-      stopApp(returnValue)
+      shiny::stopApp(returnValue)
     })
   }
 
