@@ -8,7 +8,7 @@ makeStringsGadget <- function(...) {
                                                                     "Numeric" = "num")),
       shiny::br(),
       shiny::p("Type here:"),
-      tags$textarea(id = "typings", rows = 3, cols = 75, "These, are, a, few, of, my, favorite, things"),
+      shiny::tags$textarea(id = "typings", rows = 3, cols = 75, "These, are, a, few, of, my, favorite, things"),
       shiny::br(),
       shiny::p("Preview:"),
       shiny::verbatimTextOutput("preview")
